@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add a Baddie</h2>
+<form method="POST">
+  <div class="mb-3">
+    <label class="form-label">Baddie Name</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Score by Varun</label>
+    <input type="number" name="varun" class="form-control" min="0" max="10" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Score by Ashmit</label>
+    <input type="number" name="ass" class="form-control" min="0" max="10" required>
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+{% endblock %}
