@@ -5,12 +5,14 @@ app = Flask(__name__)
 
 # PostgreSQL Config (update these with your actual credentials)
 db = psycopg2.connect(
-    host="your-postgresql-host",
-    database="your-db-name",
-    user="your-username",
-    password="your-password",
+    host="ep-fancy-moon-123456.us-east-2.aws.neon.tech",
+    database="neondb",
+    user="neondb_owner",
+    password="npg_rwS1ARVDsBd5",
     port=5432
 )
+#postgresql://neondb_owner:npg_rwS1ARVDsBd5@ep-lingering-block-a1egan2n.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
+
 cursor = db.cursor()
 
 @app.route('/')
