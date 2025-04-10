@@ -8,8 +8,9 @@ db = psycopg2.connect(
     host="ep-fancy-moon-123456.us-east-2.aws.neon.tech",
     database="neondb",
     user="neondb_owner",
-    password="npg_rwS1ARVDsBd5",
-    port=5432
+    password="npg_BlGDvtfmY60g",
+    port=5432,
+    sslmode= "require"
 )
 #postgresql://neondb_owner:npg_rwS1ARVDsBd5@ep-lingering-block-a1egan2n.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
 
